@@ -1,3 +1,6 @@
+//author: Ravi
+//read the Readme file first
+//version 2
 #include <iomanip>
 #include <iostream>
 #include <stdlib.h>
@@ -19,7 +22,7 @@ int mins = 0;
 int sec = 0;
 string comment;
 void err_invalid_syntax(){
-	cout << "Syntax:\n\t<./gate" << endl;
+	cout << "Syntax:\n\t./gate" << endl;
 	exit(0);
 
 }
