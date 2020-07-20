@@ -11,7 +11,7 @@ How to use:
   Run the object file whenever you start a study session(the timer will start), and to stop the session press 'x'/'X'.
   You can do as many sessions as you want per day, which'll all be updated to your daily study time without any err.
  
-To see the study-tim-details open "study_logs.txt" file and keep track of your progress on study time spent!
+To see the study-time-details open "study_logs.txt" file and keep track of your progress on study time spent!
 (if you can't see the "study_logs.txt" file after running the object file, just close the home application window and reopen)
 
 Note: I shall update this to version 3, where the data can be represented graphically, also highlighting trends on your study-time-curve, and more!
