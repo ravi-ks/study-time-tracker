@@ -1,7 +1,7 @@
 Mylords! greetings.
 
 # study-time-tracker
-A tool to keep track of study time, made exclusively for my GATE'21 preparation.
+A tool to keep track of study time, made exclusively for my GATE'21 preparation
 
 Steps:
   Download the driver file, compile it with a cpp-compiler (like <make gate>)
