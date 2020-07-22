@@ -15,6 +15,7 @@ To see the study-time-details open "study_logs.txt" file and keep track of your 
 (if you can't see the "study_logs.txt" file after running the object file, just close the home application window and reopen)
 
 Note: I shall update this to version 3, where the data can be represented graphically, also highlighting trends on your study-time-curve, and more!
+Update: Updated to Version 3(Know more by reading get_stats.txt)
 
 Compatibility: 
   Completely compatible on machines which runs on LINUX.
