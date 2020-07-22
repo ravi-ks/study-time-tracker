@@ -1,0 +1,12 @@
+Go to usr/bin and open a file named "get_stats" (no extension) with a text editor in sudo mode. 
+Inside the "get_stats" file, write this:
+
+  #!/bin/bash
+  python stats_graph.py
+
+And in the terminal where the files resides, to change permissions:
+
+  sudo chmod a+x get_stats
+
+Now that you are done, enter "get_stats" to get your "day-against-time" graph plot. 
+("get_stats" custom command only works when executed in the directory where "stats_graph.py" resides)
