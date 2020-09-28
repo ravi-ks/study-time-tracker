@@ -1,6 +1,5 @@
 //author: Ravi
-//read the Readme file first
-//version 3
+//version 3.10
 #include <iomanip>
 #include <iostream>
 #include <stdlib.h>
@@ -22,7 +21,7 @@ int mins = 0;
 int sec = 0;
 string comment;
 void err_invalid_syntax(){
-	cout << "Syntax:\n\t./gate" << endl;
+	cout << "Syntax:\n\t<./gate" << endl;
 	exit(0);
 
 }
@@ -70,7 +69,7 @@ void showClk() {
    cout << setfill(' ') << setw(66) << " --------------------------------------\n\n";
    if(hrs > 0)
         cout << "Woah," << hrs << " hours streak. " << comment << endl;
-   cout << "Enter 'x' to stop session" <<  endl;
+   cout << "Enter 'x' to stop session and 'p' to pause/resume session" <<  endl;
 }
 
 void timer(){
@@ -90,8 +89,22 @@ void timer(){
       		//cout << hrs << ":" << mins << ":" << sec <<endl;
       		if(_kbhit()){
 			char ch = _getch();
-			if(ch == 'x' | ch == 'X')
+			if(ch == 'x' || ch == 'X')
 			flag = 1;
+			else if(ch == 'p' || ch == 'P'){
+			        while(1){
+			                if(_kbhit()){
+			                        char ch1 = _getch();
+			                        if(ch1 == 'p' || ch1 == 'P')
+			                                break;
+			                        else if(ch1 == 'x' || ch1 == 'X'){
+			                                flag = 1;
+			                                break;
+			                        }
+			                 }
+			       }
+			}
+			                        
 		}
 		switch(hrs){
 		        case 1: comment = "Great work!";
@@ -106,7 +119,7 @@ void timer(){
 		                  break;
 		}
    	}
-   	cout << endl;
+   	cout << "\nSESSION ENDED." << endl;
 }
 
 int main(int argc, char** argv){
